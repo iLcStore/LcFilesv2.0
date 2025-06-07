@@ -64,20 +64,20 @@ qb-core/shared/items.lua
 
 - تأكد من وجود الصور (`meat_goat.png`, `pancakes.png`) في مجلد الصور الخاص الانفينتوري.
 - يجب على اللاعبين امتلاك أسلحة محددة لذبح الخروف ( `weapon_knife`، `weapon_machete`).
-- يمكنك اختيار نظام الهدف المفضل لديك من خلال `Config.TargetSystem` في ملف `config.lua`.
+- يمكنك اختيار نظام Target المفضل لديك من خلال `Config.TargetSystem` في ملف `config.lua`.
 
 ---
 
 ## 📌 المطور
 
-- Developed by: **AboMalak | LcStore**
+- Developed by: **AboMalak**
 - Discord Support: **https://discord.gg/LcStore | https://discord.gg/kYKWhyM2D4**
 
 ---
 
 ## 📜 ترخيص
 
-لا يجوز بيع أو إعادة توزيع هذا المورد دون إذن صريح
+لا يجوز بيع أو إعادة توزيع هذا السكربت دون إذن صريح
 
 
 ---
@@ -112,7 +112,7 @@ Open the following file:
     ['label'] = 'Goat Meat',
     ['weight'] = 750,
     ['type'] = 'item',
-    ['image'] = 'meat_goat.png',
+    ['image'] = 'meat_pig.png',
     ['unique'] = false,
     ['useable'] = false,
     ['shouldClose'] = false,
@@ -137,6 +137,13 @@ Open the following file:
 },
 ```
 
+### 2. Add images to `inventory/html/images/`
+
+Open the following folder:
+
+```
+inventory/html/images/
+```
 ---
 
 ## ✅ Notes
@@ -149,11 +156,11 @@ Open the following file:
 
 ## 📌 Developer
 
-- Developed by: **AboMalak | LcStore**
+- Developed by: **AboMalak**
 - Discord Support: **https://discord.gg/LcStore | https://discord.gg/kYKWhyM2D4**
 
 ---
 
 ## 📄 License
 
-Reselling or redistribution is not permitted without explicit permission.
+This script may not be sold or redistributed without explicit permission.
