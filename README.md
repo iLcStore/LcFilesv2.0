@@ -1,26 +1,26 @@
-# 🐐 Lc-Eid | سكربت عيد الأضحى لـ FiveM
+# 🐐 Lc-Eid | Eid al-Adha Script for FiveM
 
-سكربت متكامل لإحياء فعاليات عيد الأضحى داخل سيرفرات FiveM. يتضمن توزيع العيدية، ذبح الأضحية، واستعمال نظام التارقت المتوافق مع أشهر الأنظمة.
+A complete script to celebrate Eid al-Adha within FiveM servers. Includes distributing Eidiya, performing the sacrifice, and utilizing a targeting system compatible with popular systems.
 
 ---
 
-## ✨ المميزات
+## ✨ Features
 
-- 🎁 توزيع عيديات للاعبين من خلال NPC.
-- 🔪 ذبح الأضاحي باستخدام أسلحة محددة.
-- 🔄 دعم ثلاث أنظمة Target:
+- 🎁 Distribute Eidiya to players via NPCs.
+- 🔪 Sacrifice animals using specified weapons.
+- 🔄 Supports three Target systems:
   - `interact`
   - `Lc-target`
   - `ox_target`
-- 👤 تخصيص كامل عبر ملف `config.lua`.
-- 🐐 ظهور خروف/ماعز في مواقع محددة.
-- 🌍 إمكانية تحديد مناطق و NPC مختلفة.
+- 👤 Fully customizable via `config.lua` file.
+- 🐐 Spawn goats/sheep at specified locations.
+- 🌍 Ability to set different zones and NPCs.
 
 ---
 
-## ⚙️ التركيب
+## Installation
 
--- qb-core/shared/item.lua
+qb-core/shared/item.lua
 ```
 ['meat_goat'] = {
     ['name'] = 'meat_goat',
@@ -34,14 +34,4 @@
     ['combinable'] = nil,
     ['description'] = 'Fresh goat meat, perfect for Eid!'
 },
-```
-
--- qb-core/server/main.lua
-```
-QBCore.Functions.CreateUseableItem('meat_goat', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-    if Player.Functions.AddItem(item.name, 1) then
-        TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items[item.name], 'add')
-    end
-end)
 ```
