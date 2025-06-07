@@ -4,6 +4,12 @@
 
 ---
 
+### ✅ المتطلبات الأساسية
+
+- QB-Core (https://github.com/qbcore-framework/qb-core)
+- qb-inventory (https://github.com/qbcore-framework/qb-inventory)
+---
+
 ## ✨ الميزات
 
 - 🎁 توزيع العيدية للاعبين من خلال NPC.
@@ -34,7 +40,7 @@ qb-core/shared/items.lua
     ['label'] = 'Goat Meat',
     ['weight'] = 750,
     ['type'] = 'item',
-    ['image'] = 'meat_goat.png',
+    ['image'] = 'meat_pig.png',
     ['unique'] = false,
     ['useable'] = false,
     ['shouldClose'] = false,
@@ -42,21 +48,33 @@ qb-core/shared/items.lua
     ['description'] = 'Fresh goat meat, perfect for the holiday!'
 },
 
-['pancakes'] = {
-    ['name'] = 'pancakes',
-    ['label'] = 'Pancakes',
+['cake'] = {
+    ['name'] = 'cake Eid',
+    ['label'] = 'cake Eid',
     ['weight'] = 1,
     ["created"] = nil,
     ["decay"] = 10.0,
     ["isDecay"] = true,
     ['type'] = 'item',
-    ['image'] = 'pancakes.png',
+    ['image'] = 'cake.png',
     ['unique'] = false,
     ['useable'] = true,
     ['shouldClose'] = true,
     ['combinable'] = nil,
-    ['description'] = 'pancakes'
+    ['description'] = 'cake Eid'
 },
+```
+
+### 2. اضافة الصور ل`inventory/html/images/`
+
+افتح الانفينتوري وضيف صور الايتمات:
+
+```
+inventory/html/images/
+```
+```
+meat_pig.png
+cake.png
 ```
 
 ---
@@ -87,6 +105,11 @@ qb-core/shared/items.lua
 A complete script to celebrate Eid al-Adha inside FiveM servers. Includes giving Eidiya, sacrificing animals, and utilizing a targeting system compatible with popular systems.
 
 ---
+
+## ✅ Requirements
+
+- QB-Core (https://github.com/qbcore-framework/qb-core)
+- qb-inventory (https://github.com/qbcore-framework/qb-inventory)
 
 ## ✨ Features
 
@@ -164,3 +187,9 @@ inventory/html/images/
 ## 📄 License
 
 This script may not be sold or redistributed without explicit permission.
+
+
+## Images
+
+![meat_goat.png](https://cdn.discordapp.com/attachments/1057493068439359549/1380747013448142950/meat_pig.png?ex=6845005d&is=6843aedd&hm=5c866582bad364c1542224d9f5c5e126375d8af270a6636424c7185eac4d768e&)
+![cake.png](https://cdn.discordapp.com/attachments/1057493068439359549/1380747966939398185/cake.png?ex=68450140&is=6843afc0&hm=4eaea7b41fe259426c6c8faca9ac37ece7198919309bbc812bc4068704f395a7&)
