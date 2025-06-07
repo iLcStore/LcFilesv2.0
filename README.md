@@ -6,8 +6,8 @@
 
 ### ✅ المتطلبات الأساسية
 
-- QB-Core (https://github.com/qbcore-framework/qb-core)
-- qb-inventory (https://github.com/qbcore-framework/qb-inventory)
+- [QB-Core](https://github.com/qbcore-framework/qb-core)
+- [qb-inventory](https://github.com/qbcore-framework/qb-inventory)
 ---
 
 ## ✨ الميزات
