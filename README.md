@@ -29,7 +29,7 @@
 qb-core/shared/items.lua
 ```
 
-افتح الملف التالي:
+وأضف ما يلي داخل جدول العناصر:
 ```
 ['meat_goat'] = {
     ['name'] = 'meat_goat',
