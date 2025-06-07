@@ -9,7 +9,7 @@
 - 🎁 توزيع العيدية للاعبين من خلال NPC.
 - 🔪 ذبح الحيوانات باستخدام أسلحة مخصصة.
 - 🔄 يدعم 4 أنظمة Target:
-  - [interact](https://github.com/JacobWilliams/interact)
+  - [interact](https://github.com/darktrovx/interact)
   - [Lc-target](https://github.com/Lc-Scripts/Lc-target)
   - [qb-target](https://github.com/qbcore-framework/qb-target)
   - [ox_target](https://github.com/overextended/ox_target)
@@ -60,6 +60,26 @@ qb-core/shared/items.lua
     ['description'] = 'pancakes'
 },
 ```
+
+---
+## ✅ ملاحظات
+
+- تأكد من وجود الصور (`meat_goat.png`, `pancakes.png`) في مجلد الصور الخاص بمخزنك.
+- يجب على اللاعبين امتلاك أسلحة محددة لذبح الحيوان (على سبيل المثال `weapon_knife`، `weapon_machete`).
+- يمكنك اختيار نظام الهدف المفضل لديك من خلال `Config.TargetSystem` في ملف `config.lua`.
+
+---
+
+## 📌 Developer
+
+- Developed by: **AboMalak | LcStore**
+- Discord Support: **https://discord.gg/LcStore | https://discord.gg/kYKWhyM2D4**
+
+---
+
+## 📜 ترخيص
+
+هذا المورد مخصص للاستخدام في خادم FiveM فقط. لا يجوز بيع أو إعادة توزيع هذا المورد دون إذن صريح.
 
 ---
 
@@ -132,8 +152,8 @@ Open the following file:
 
 ## 📌 Developer
 
-- Developed by: **AboMalak / Lc Development**
-- Discord Support: Coming soon...
+- Developed by: **AboMalak | LcStore**
+- Discord Support: **https://discord.gg/LcStore | https://discord.gg/kYKWhyM2D4**
 
 ---
 
