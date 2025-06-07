@@ -13,8 +13,6 @@
   - [Lc-target](https://github.com/Lc-Scripts/Lc-target)
   - [qb-target](https://github.com/qbcore-framework/qb-target)
   - [ox_target](https://github.com/overextended/ox_target)
-- 🐐 ظهور الخراف أو الماعز في مواقع مخصصة.
-- 🌍 إمكانية تحديد مناطق و NPCs مختلفة حسب الرغبة.
 - ⚙️ قابل للتخصيص بالكامل عبر ملف `config.lua`.
 
 ---
@@ -64,13 +62,13 @@ qb-core/shared/items.lua
 ---
 ## ✅ ملاحظات
 
-- تأكد من وجود الصور (`meat_goat.png`, `pancakes.png`) في مجلد الصور الخاص بمخزنك.
-- يجب على اللاعبين امتلاك أسلحة محددة لذبح الحيوان (على سبيل المثال `weapon_knife`، `weapon_machete`).
+- تأكد من وجود الصور (`meat_goat.png`, `pancakes.png`) في مجلد الصور الخاص الانفينتوري.
+- يجب على اللاعبين امتلاك أسلحة محددة لذبح الخروف ( `weapon_knife`، `weapon_machete`).
 - يمكنك اختيار نظام الهدف المفضل لديك من خلال `Config.TargetSystem` في ملف `config.lua`.
 
 ---
 
-## 📌 Developer
+## 📌 المطور
 
 - Developed by: **AboMalak | LcStore**
 - Discord Support: **https://discord.gg/LcStore | https://discord.gg/kYKWhyM2D4**
@@ -79,7 +77,8 @@ qb-core/shared/items.lua
 
 ## 📜 ترخيص
 
-هذا المورد مخصص للاستخدام في خادم FiveM فقط. لا يجوز بيع أو إعادة توزيع هذا المورد دون إذن صريح.
+لا يجوز بيع أو إعادة توزيع هذا المورد دون إذن صريح
+
 
 ---
 
@@ -98,8 +97,6 @@ A complete script to celebrate Eid al-Adha inside FiveM servers. Includes giving
   - [Lc-target](https://github.com/Lc-Scripts/Lc-target)
   - [qb-target](https://github.com/qbcore-framework/qb-target)
   - [ox_target](https://github.com/overextended/ox_target)
-- 🐐 Spawn goats/sheep in configurable locations.
-- 🌍 Set multiple sacrifice zones and NPCs.
 - ⚙️ Fully customizable via `config.lua`.
 
 ---
@@ -159,4 +156,4 @@ Open the following file:
 
 ## 📄 License
 
-This resource is for use in FiveM servers only. Reselling or redistribution is not permitted without explicit permission.
+Reselling or redistribution is not permitted without explicit permission.
