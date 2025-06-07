@@ -1,26 +1,35 @@
-# 🐐 Lc-Eid | Eid al-Adha Script for FiveM
+# 🐐 Lc-Eid | AboMalak
 
-A complete script to celebrate Eid al-Adha within FiveM servers. Includes distributing Eidiya, performing the sacrifice, and utilizing a targeting system compatible with popular systems.
-
----
-
-## ✨ Features
-
-- 🎁 Distribute Eidiya to players via NPCs.
-- 🔪 Sacrifice animals using specified weapons.
-- 🔄 Supports three Target systems:
-  - `interact`
-  - `Lc-target`
-  - `ox_target`
-- 👤 Fully customizable via `config.lua` file.
-- 🐐 Spawn goats/sheep at specified locations.
-- 🌍 Ability to set different zones and NPCs.
+سكربت متكامل للاحتفال بعيد الأضحى داخل خوادم FiveM. يشمل توزيع العيدية، أداء الأضحية، واستخدام نظام استهداف متوافق مع أشهر الأنظمة.
 
 ---
 
-## Installation
+## ✨ الميزات
 
-qb-core/shared/item.lua
+- 🎁 توزيع العيدية للاعبين من خلال NPC.
+- 🔪 ذبح الحيوانات باستخدام أسلحة مخصصة.
+- 🔄 يدعم 4 أنظمة Target:
+  - [interact](https://github.com/JacobWilliams/interact)
+  - [Lc-target](https://github.com/Lc-Scripts/Lc-target)
+  - [qb-target](https://github.com/qbcore-framework/qb-target)
+  - [ox_target](https://github.com/overextended/ox_target)
+- 🐐 ظهور الخراف أو الماعز في مواقع مخصصة.
+- 🌍 إمكانية تحديد مناطق و NPCs مختلفة حسب الرغبة.
+- ⚙️ قابل للتخصيص بالكامل عبر ملف `config.lua`.
+
+---
+
+## ⚙️ التثبيت
+
+### 1. إضافة العناصر إلى `qb-core`
+
+افتح الملف التالي:
+
+```
+qb-core/shared/items.lua
+```
+
+افتح الملف التالي:
 ```
 ['meat_goat'] = {
     ['name'] = 'meat_goat',
@@ -32,6 +41,102 @@ qb-core/shared/item.lua
     ['useable'] = false,
     ['shouldClose'] = false,
     ['combinable'] = nil,
-    ['description'] = 'Fresh goat meat, perfect for Eid!'
+    ['description'] = 'Fresh goat meat, perfect for the holiday!'
+},
+
+['pancakes'] = {
+    ['name'] = 'pancakes',
+    ['label'] = 'Pancakes',
+    ['weight'] = 1,
+    ["created"] = nil,
+    ["decay"] = 10.0,
+    ["isDecay"] = true,
+    ['type'] = 'item',
+    ['image'] = 'pancakes.png',
+    ['unique'] = false,
+    ['useable'] = true,
+    ['shouldClose'] = true,
+    ['combinable'] = nil,
+    ['description'] = 'pancakes'
 },
 ```
+
+---
+
+# 🐐 Lc-Eid | AboMalak
+
+A complete script to celebrate Eid al-Adha inside FiveM servers. Includes giving Eidiya, sacrificing animals, and utilizing a targeting system compatible with popular systems.
+
+---
+
+## ✨ Features
+
+- 🎁 Distribute Eidiya to players via NPCs.
+- 🔪 Sacrifice animals using specific weapons.
+- 🔄 Supports 4 targeting systems:
+  - [interact](https://github.com/JacobWilliams/interact)
+  - [Lc-target](https://github.com/Lc-Scripts/Lc-target)
+  - [qb-target](https://github.com/qbcore-framework/qb-target)
+  - [ox_target](https://github.com/overextended/ox_target)
+- 🐐 Spawn goats/sheep in configurable locations.
+- 🌍 Set multiple sacrifice zones and NPCs.
+- ⚙️ Fully customizable via `config.lua`.
+
+---
+
+## ⚙️ Installation
+
+### 1. Add items to `qb-core/shared/items.lua`
+
+Open the following file:
+```
+['meat_goat'] = {
+    ['name'] = 'meat_goat',
+    ['label'] = 'Goat Meat',
+    ['weight'] = 750,
+    ['type'] = 'item',
+    ['image'] = 'meat_goat.png',
+    ['unique'] = false,
+    ['useable'] = false,
+    ['shouldClose'] = false,
+    ['combinable'] = nil,
+    ['description'] = 'Fresh goat meat, perfect for the holiday!'
+},
+
+['pancakes'] = {
+    ['name'] = 'pancakes',
+    ['label'] = 'Pancakes',
+    ['weight'] = 1,
+    ["created"] = nil,
+    ["decay"] = 10.0,
+    ["isDecay"] = true,
+    ['type'] = 'item',
+    ['image'] = 'pancakes.png',
+    ['unique'] = false,
+    ['useable'] = true,
+    ['shouldClose'] = true,
+    ['combinable'] = nil,
+    ['description'] = 'pancakes'
+},
+```
+
+---
+
+## ✅ Notes
+
+- Ensure the images (`meat_goat.png`, `pancakes.png`) exist in your inventory's image folder.
+- Players must have specific weapons to sacrifice the animal (e.g., `weapon_knife`, `weapon_machete`).
+- You can select your preferred Target system via `Config.TargetSystem` in `config.lua`.
+
+---
+
+## 📌 Developer
+
+- Developed by: **AboMalak / Lc Development**
+- Discord Support: Coming soon...
+
+---
+
+## 📄 License
+
+This resource is for use in FiveM servers only. Reselling or redistribution is not permitted without explicit permission.
