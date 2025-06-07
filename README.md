@@ -20,7 +20,8 @@
 
 ## ⚙️ التركيب
 
-qb-core/shared/item.lua
+-- qb-core/shared/item.lua
+```
 ['meat_goat'] = {
     ['name'] = 'meat_goat',
     ['label'] = 'Goat Meat',
@@ -33,3 +34,14 @@ qb-core/shared/item.lua
     ['combinable'] = nil,
     ['description'] = 'Fresh goat meat, perfect for Eid!'
 },
+```
+
+-- qb-core/server/main.lua
+```
+QBCore.Functions.CreateUseableItem('meat_goat', function(source, item)
+    local Player = QBCore.Functions.GetPlayer(source)
+    if Player.Functions.AddItem(item.name, 1) then
+        TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items[item.name], 'add')
+    end
+end)
+```
